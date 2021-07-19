@@ -1,0 +1,67 @@
+/* barra superior */
+.barra-superior{
+    background-color: black;
+}
+.barra-superior h6 {
+    color: white;
+}
+
+/* header */
+header{
+    background-color: #F0A83E;
+}
+header nav ul li{
+    color: white;
+}
+header .titulo1{
+    color: black;
+}
+header .titulo2{
+    color: white;
+}
+
+/* sector con imagen de fondo */
+.splash{
+    background-image:url(../images/bowl.png);
+    height: 600px;
+    width: 100%;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+/* sector de productos */
+.productos div h4{
+    color: #3C2313;
+}
+.productos div h5{
+    color: #F0A83E;
+}
+
+/* sector de contactos */
+.contactos{
+    background-color: #3C2313;
+}
+.contactos h3{
+    color: white;
+}
+.contactos i{
+    color: #8A8787;
+}
+.contactos h5{
+    color: #8A8787;
+}
+.contactos .logo1{
+    color: white;
+}
+.contactos .logo2{
+    color: #F0A83E;
+}
+
+/* footer de pag */
+footer{
+    background-color:#F0A83E;
+}
+footer h5 {
+    color: white;
+    text-align: center;
+}

@@ -1,0 +1,34 @@
+.back-g {
+    background-image: url(http://lexitec.net/wp-content/uploads/2017/04/LEXI5-1024x536.jpg);
+}
+
+.personal-pic{
+    margin: 10px auto 10px;
+    display: block;
+}
+
+h1, h3{
+    background-color: #C4C4C4;
+    color: #005677;
+    text-align: center;
+}
+
+h1, h3, li {
+    font-family: 'Times New Roman', Times, serif;
+    font
+}
+
+li {
+font-size: 15px;
+}
+
+footer{
+    background-color: #005677;
+    color: white;
+    text-align: center;
+}
+
+.sobremi {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}

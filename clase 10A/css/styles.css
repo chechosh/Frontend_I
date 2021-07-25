@@ -1,0 +1,109 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    position: relative;
+}
+/* este es el header */
+
+.barra{
+    position: absolute;
+    width: 100%;
+    height: 38px;
+    left: 0px;
+    right: 0px;
+    background-color: #1CD1B0;
+}
+.barra p{
+    padding-top: 10px;
+    padding-left: 7px;
+}
+
+.titulo{
+    position: absolute;
+    width: 100%;
+    height: 101px;
+    left: 0px;
+    top: 38px;
+    background-color: #00669F;
+}
+.titulo h1{
+    padding-top:  30px;
+    padding-left: 25px;
+}
+
+/* este es el main */
+
+.cajas{
+    position: absolute;
+    width: 960px;
+    height: 530px;
+    left: 18%;
+    top: 38px;
+}
+/* las cartas */
+.caja{
+    text-align: center;
+    position: absolute;
+    width: 300px;
+    height: 529px;
+    background: #f3f3f3;
+}
+
+.uno{
+    left: 32px;
+    top: 292px;
+}
+
+.dos{
+    top: 292px;
+    left: 362px;
+}
+
+.tres{
+    left: 692px;
+    top: 292px;
+}
+
+button{
+    position: relative;
+    width: 128.78px;
+    height: 48.52px;
+    top: 35px;
+    background-color: #00669F;
+    color: white;
+}
+
+.perfil{
+    border-radius: 50%;
+    position: relative;
+    bottom: 65px;
+}
+.contenido{
+    position: relative;
+    width: 100%;
+    bottom: 45px;
+}
+
+
+/* este es el footer */
+
+footer{
+    position: absolute;
+    width: 100%;
+    height: 51px;
+    left: 0px;
+    top: 972px;
+    background-color: #00669F;
+}
+
+.pie-pag{
+    text-align: left;
+    color: white;
+    padding-top: 20px;
+    padding-left: 10px;
+}

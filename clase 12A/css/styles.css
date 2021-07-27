@@ -2,36 +2,313 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
-/* este el header */
-ul{
-    list-style-type: none;
-}
-header{
-    margin: 3px;
-}
+/* esta es la barra superior */
+
 .barra-superior{
+    display: flex;
     height: 20px;
     width: 100%;
-    background-color:#222222;
+    color: white;
+    background-color: #222222;
+    justify-content: space-between;
+    font-size: 10px;
+    font-weight: 400;
+}
+.barra-superior h6 {
+    position: absolute;
+    left: 40px;
+    top: 5px;
+}
+
+.superior-right{
+    position: absolute;
+    right: 100px;
+    top: 4px;
+}
+
+.superior-right ul{
     display: flex;
+    list-style-type: none;
+}
+.superior-right ul li{
+    padding-right: 20px;
+}
+.fas{
     color: white;
 }
 
+/* este es el header */
+
 .logo-nav{
-    position: relative;
     display: flex;
     width: 100%;
     height: 62px;
-    top: 20px;
+    background-color: #F0A83E;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 166.38px;
+    height: 23px;
+    position: relative;
+    left: 40px;
+    top: 19px;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    font-size: 13px;
+    font-weight: 400;
+    color: white;
+    position: relative;
+    top: 16px;
+    right: 40px;
+}
+.nav nav ul li{
+    padding: 10px;
+}
+li i{
+    padding: 5px;
+}
+
+/* este es el slide */
+
+.slide{
+    background-image: url(../images/bowl.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 409px;
+    display: flex;
+}
+
+.mensajes{
+    text-align: center;
+    position: absolute;
+    top: 270px;
+    right: 80px;
+}
+
+.mensajes h2{
+    background-color: white;
+    padding: 5px;
+    font-size: 30px;
+    font-weight: bold;
+    width: 345px;
+}
+.mensajes h4{
+    padding: 20px;
+}
+.mensajes button{
+    height: 49px;
+    width: 141px;
     background-color: #F0A83E;
     color: white;
+    border-radius: 2px;
+    font-size: 16px;
+    font-weight: bold;
 }
-.logo{
-    position: absolute;
-    width: 166,38px;
-    height: 23px;
-    top: 39px;
-    left: 40px;
+
+/* main y cajas */
+
+.destacados{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.destacados img{
+width: 87px;
+height: 91px;
+padding: 15px;
+}
+
+.destacados h2{
+    font-size: 40px;
+    font-weight: bold;
+    color: #3C2313;
+}
+
+.destacados ul{
+    display: flex;
+    list-style-type: none;
+
+}
+.destacados ul li{
+    padding: 15px;
+}
+
+.productos{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.caja{
+    padding: 19.5px;
+    text-align: center;
+    background-color: #FBFAF6;
+    margin: 19px;
+}
+.caja h4{
+    color: #3C2313;
+    font-size: 15px;
+}
+.caja p{
+    color: #F0A83E;
+    font-size: 15px;
+}
+ /* este es el fomrulario de contacto */
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.formulario h3{
+    color: #3C2313;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 40px;
+}
+
+.formulario input{
+    background-color: #3C2313;
+    height: 40px;
+    width: 340px;
+    border-radius: 15px;
+    margin: 5px;
+    color: white;
+    font-size: 9px;
+    font-weight: bold;
+}
+
+.botones{
+    display: flex;
+}
+.botones button{
+    width: 110px;
+    height: 34px;
+    border-radius: 15px;
+    margin: 50px 5px;
+    font-size: 16px;
+    color: white;
+}
+.reset{
+    background-color: #8A8787;
+}
+.send{
+    background-color: #F0A83E;
+}
+
+/* suscribirse */
+
+.suscribete{
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    width: 100%;
+    background-color: #F0A83E;
+    color: white;
+    font-size: 20px;
+}
+
+.sus-left{
+    display: flex;
+    margin: 20px 20px;
+}
+.sus-left img{
+    width: 40px;
+    height: 20.28px;
+    margin-right: 10px;
+}
+
+.sus-right{
+    display: flex;
+    justify-content: center;
+    margin: 10px 40px;
+}
+
+.sus-right input{
+    background-color: white;
+    height: 40px;
+    width: 271px;
+    border-radius: 15px;
+    margin-right: 5px;
+}
+.sus-right button{
+    height: 34px;
+    width: 70px;
+    border-radius: 15px;
+    background-color: #3C2313;
+    color: white;
+    font-size: 9px;
+}
+
+/* este es el footer */
+
+.contenido-foot{
+    display: flex;
+    width: 100%;
+    height: 284px;
+    background-color: #3C2313;
+    justify-content: space-between;
+}
+/* iconos */
+.iconos-footer{
+    margin: 27px 70px;
+}
+
+.iconos{
+    display: flex;
+    width: 179px;
+    height: 66px;
+    justify-content: space-between;
+}
+
+.ico-ico{
+    width: 58px;
+    height: 58px;
+    background-color: #8A8787;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.ico-ico i{
+    font-size: 30px;
+}
+
+.text-ico{
+    color: white;
+    margin-left: 30px;
+}
+
+/* logo del footer */
+
+.logo-foot{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 70px;
+}
+
+/* barra inferior */
+
+.barra-inferior{
+    background-color: #222222;
+    height: 20px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 10px;
 }

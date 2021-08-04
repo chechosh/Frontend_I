@@ -1,0 +1,191 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* este es el header */
+
+.barra{
+    background-color: #D1891C;
+    font-weight: normal;
+    padding-left: 1rem;
+    font-size: 2rem;
+    height: 35px;
+}
+
+.title{
+background-color: #00669F;
+color: white;
+font-weight: normal;
+box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
+font-size: 2rem;
+height: 75px;
+padding: 1rem;
+}
+
+
+/* este es el section */
+section{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.card{
+    height: 40rem;
+    position: relative;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F3F3F3;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 2rem 2rem 0 0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.perfil{
+    border-radius: 50%;
+    width: 50%;
+    margin: 30% 0 -10% 0;
+}
+.corazon{
+    position: absolute;
+    width: 10%;
+    left: 1.2rem;
+    top: 1rem;
+}
+.card h2{
+    font-size: 2rem;
+    margin: 0 0 -10px 0;
+}
+.card p{
+    font-size: 1rem;
+    padding: 0.5rem;
+}
+.card div{
+    background-color: #00669F;
+    color: #F3F3F3;
+    width: 30%;
+    height: 60px;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 1.2rem;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+.batman{
+background-image: url(../images/back-batman.png);
+}
+.woman{
+    background-image: url(../images/back-woman.png);
+}
+.superman{
+    background-image: url(../images/back-superman.png);
+}
+.harley{
+    background-image: url(../images/back-harley.png);
+}
+
+
+/* este es el footer */
+
+footer{
+    background-color: #00669F;
+    color: #F3F3F3;
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+}
+
+footer img{
+    width: 8rem;
+    margin: 1rem;
+}
+
+/* medias  */
+
+@media (min-width: 481px){
+    .barra{
+        width: 100%;
+        height: 2vw;
+        background-color: #D1891C;
+        font-size: 1.8vw;
+        padding-left: 10px;
+        font-weight: bold;
+    }
+    .title{
+        width: 100%;
+        height: 9vw;
+        background-color: #00669F;
+        color: white;
+        font-size: 3vw;
+        padding-top: 2vh;
+        padding-left: 10px;
+    }
+
+    section{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }  
+
+    .card{
+        width: 30%;
+        border-radius: 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1.5vw;
+        text-align: center;
+        background-color:#F3F3F3;
+        margin-top: 3%;
+        margin-bottom: 3%;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+    .card h2{
+        font-size: 2vw;
+        margin-bottom: 5%;
+        margin-top: 5%;
+    }
+    .card p{
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
+    .card div{
+        width: 40%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        border-radius: 10%;
+        background-color: #00669F;
+        color: white;
+        margin-top: 5%;
+        margin-bottom: 8%;
+        font-size: 1.5vw;
+    }
+
+
+    footer{
+        width: 100%;
+        height: 100px;
+        display: flex;
+        flex-direction: row;
+        background-color: #00669F;
+        color: white;
+        justify-content: space-around;
+        align-items: center;
+        padding-left: 20%;
+        padding-bottom: 2vh;
+    }
+
+    footer p{
+        font-weight: bold;
+        font-size: 3.5vw;
+    }
+    }
+}

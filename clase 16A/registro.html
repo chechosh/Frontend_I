@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Clase 16</title>
+</head>
+<body>
+    <header>
+        <h3 class="descuento">20% de descuento en todos los productos</h3>
+        <div class="header">
+            <a href="index.html"><img src="images/logo 1.png" alt="logo" class="logo"></a>
+            <h1 class="titulo">Tienda Heroes</h1>
+        </div>
+        <nav class="navegador">
+            <ul>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="registro.html">Registrame</a></li>
+                <li><a href="login.html">Ingresar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="formulario-registro">
+        <h1 class="registro-titulo">Registro</h1>
+        <form class="form-registro" action="/registros/" method="POST">
+            <input type="text" name="nombre" id="nombre" class="field" placeholder="  Nombre y Apellido"><br>
+            <input type="email" name="email" id="email" class="field" placeholder="  Correo electronico"><br>
+            <input type="password" name="contraseña" id="contraseña" class="field" placeholder="  Contraseña"><br>
+            <select class="field" name="Pais" id="Pais">
+                <option disabled selected>Pais</option>
+                <option value="Arg">Argentina</option>
+                <option value="Bra">Brasil</option>
+                <option value="Col">Colombia</option>
+                <option value="Chi">Chile</option>
+            </select><br>
+            
+            <button class="reset-reg" type="reset">Resetear</button>
+            <button class="registrar-reg" type="submit">Registrar</button>
+            
+        </form>
+        <a class="link-registro" href="">¿No tienes una cuenta? <span>Registrarme</span> </a>
+    </section>
+    <footer>
+        <p>Todos los derechos reservados a FRONT END 1</p>
+    </footer>
+</body>
+</html>

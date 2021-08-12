@@ -1,0 +1,144 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* esto es del header  */
+
+.descuento{
+    background-color: #1CD1B0;
+    padding-left: 2rem;
+    width: 100%;
+}
+.header{
+    display: flex;
+    align-items: center;
+    background-color: #00669F;
+    color: #f3f3f3;
+    padding-left: 1.5rem;
+}
+.titulo{
+    padding-left: 2rem;
+}
+.navegador{
+    background-color: #001D2D;
+    color: #f3f3f3;
+    height: 30px;
+}
+.navegador ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+.navegador ul li{
+    margin: 0 1rem 0 1rem;
+    padding-top: 0.5rem;
+}
+.navegador ul li a{
+    text-decoration: none;
+    color: #f3f3f3;
+}
+
+
+
+/* esto es el section  */
+
+section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 45rem;
+    align-items: center;
+}
+.card{
+    height: 33rem;
+    width: 300px;
+    position: relative;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F3F3F3;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 2rem 2rem 0 0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.perfil{
+    border-radius: 50%;
+    width: 40%;
+    margin: 30% 0 -10% 0;
+}
+.corazon{
+    position: absolute;
+    width: 10%;
+    left: 1.2rem;
+    top: 1rem;
+}
+.card h2{
+    font-size: 1.5rem;
+    margin: 0 0 -10px 0;
+}
+.card p{
+    font-size: 1rem;
+    padding: 0.3rem;
+    text-align: justify;
+    text-justify:inter-word;
+
+}
+.botones{
+    background-color: #00669F;
+    color: #f3f3f3;
+    text-decoration: none;
+    height: 49px;
+    width: 7.5rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.batman{
+    background-image: url(../images/back-batman.png);
+    }
+    .superman{
+        background-image: url(../images/back-superman.png);
+    }
+    .harley{
+        background-image: url(../images/back-harley.png);
+    }
+
+/* eso es el footer */
+
+footer{
+    background-color: #00669F;
+    color: #f3f3f3;
+    height: 3.2rem;
+    text-align: center;
+}
+footer p{
+    padding-top: 1rem;
+}
+
+
+/* esto es el formulario de la pagina agregar */
+
+.formulario-agregar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #00669F;
+    height: 832px;
+    width: 59rem;
+    border-radius: 3rem;
+}
+.formularios-agregar{
+    display: flex;
+}

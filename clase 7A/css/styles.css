@@ -1,0 +1,40 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+header{
+    text-align: center;
+}
+h1{
+    background-color: #C4C4C4;
+    color: #005677;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 35px;
+    font-weight: 700;
+    height: 60px;
+}
+h3{
+    background-color: #C4C4C4;
+    color: #005677;
+}
+p{
+    font-size: 15px;
+}
+.primera{
+    height: 80px;
+}
+.tercera ul{
+    list-style-type: none;
+}
+.cuarta{
+    height: 200px;
+}
+.cuarta ul{
+    list-style-type: none;
+}
+
+footer{
+    background-color: #005677;
+    height: 40px;
+    width: 100%;
+    text-align: center;
+}

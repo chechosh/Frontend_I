@@ -52,12 +52,13 @@ nav ul li a:before{
     background: var(--decoration-color);
     position:absolute;
     bottom:-10px; 
-    /* alto y ancho=0 */
-    /* transition: ; */
+    height: 5px;
+    width: 0%;
+    transition: 7s 1;
 }
 nav ul li a:hover::before{
-    /* ancho final */
-    
+    width: 100%;
+}
 
 /* Barra redes */
 .social {
@@ -76,7 +77,7 @@ nav ul li a:hover::before{
     background: var(--primary-color);
     padding: 10px 15px;
     text-decoration: none;
-    /* transition: ; */
+    transition: 0.8s;
 }
 
 .social ul li .icon-facebook {background:#3b5998;} /* Establecemos los colores de cada red social, aprovechando su class */
@@ -86,10 +87,9 @@ nav ul li a:hover::before{
 .social ul li .icon-mail {background: #666666;}
 
 .social ul li a:hover{
-    /* transform: ; */
-    animation: socialExp 5s infinite;
-    background-color: black;
-    /* padding: ; */
+    transform:scaleX(2.3);
+    background-color: #000;
+    padding-right: 0.5rem;
 }
 
 
@@ -113,7 +113,6 @@ nav ul li a:hover::before{
 }
 .container a:hover{
     color:var(--decoration-color);
-    color: rgb(201, 151, 57);
 }
  
 /* spinner| */
@@ -132,18 +131,23 @@ nav ul li a:hover::before{
     border-right: 10px solid rgb(66,139,202);
     border-bottom: 10px solid rgb(202, 66, 129);
     border-left: 10px solid rgba(66,139,202,.2);
-     /* animation: ; */
+     animation: spinner 1s infinite;
  }
 /* keyframes
     crear la animación con la rotación desde el momento 0 y momento 100
  */
 
-
- @keyframes socialExp {
-     0%{ opacity: 0%;}
-
-     50%{transform: scale(2,1); opacity: 100%;}
-
-     100%{opacity: 0%;}
-     
+ @keyframes spinner{
+    0% {transform: rotate(30deg)}
+    10% {transform: rotate(60deg)}
+    20% {transform: rotate(90deg)}
+    30% {transform: rotate(120deg)}
+    40% {transform: rotate(150deg)}
+    50% {transform: rotate(180deg)}
+    60% {transform: rotate(210deg)}
+    70% {transform: rotate(240deg)}
+    80% {transform: rotate(270deg)}
+    90% {transform: rotate(310deg)}
+    95% {transform: rotate(330deg)}
+    100% {transform: rotate(360deg)}
  }

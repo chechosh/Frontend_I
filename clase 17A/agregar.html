@@ -26,42 +26,43 @@
             </ul>
         </nav>
     </header>
-    <section class="formulario-agregar">
-        <h1 class="titulo-form">Añadi tu super!</h1>
-        <p>Agrega tu personaje favorito completando las opciones</p>
-        <div class="formularios-agregar">
-            <div class="form left">
-                <form action="/registros/" method="POST">
-                    <label for="nombre">Nombre</label><br>
-                    <input type="text" name="nombre" id="nombre"><br>
-                    <label for="fecha">Fecha</label><br>
-                    <input type="date" name="fecha" id="fecha"><br>
-                    <textarea name="descripcion" id="descripcion" cols="30" rows="10" placeholder="Descripcion"></textarea>
-                </form>
+    <main>
+        <section class="formulario-agregar">
+            <h1 class="titulo-form">Añadi tu super!</h1>
+            <p>Agrega tu personaje favorito completando las opciones</p>
+            <div class="forms-agregar">
+                <div class="form left">
+                    <form action="/registros/" method="POST">
+                        <label for="nombre">*Nombre</label><br>
+                        <input class="field" type="text" name="nombre" id="nombre"><br>
+                        <label for="fecha">Fecha</label><br>
+                        <input class="field" type="date" name="fecha" id="fecha"><br>
+                        <textarea name="descripcion" id="descripcion" cols="45" rows="20" placeholder="  Descripcion"></textarea>
+                    </form>
+                </div>
+                <div class="form-right">
+                    <label for="especie">Especie</label><br>
+                    <select class="field" name="especie" id="especie">
+                        <option disabled selected >Especie</option>
+                        <option value="humano">Humano</option>
+                        <option value="alienigena">Alienigena</option>
+                    </select><br>
+                    <label for="foto">Agregar foto</label><br>
+                    <input class="file" type="file" id="foto" name="foto"><br>
+                    <label for="poderes">Poderes</label><br>
+                    <input class="opts" type="checkbox" name="volar" id="volar" value="volar" placeholder="Volar">  Volar<br>
+                    <input class="opts" type="checkbox" name="superinteligencia" id="superinteligencia" value="superinteligencia">  Superinteligencia<br>
+                    <input class="opts" type="checkbox" name="Vista de rayo láser" id="Vista de rayo láser" value="Vista de rayo láser">  Vista de rayo láser<br>
+                    <input class="opts" type="checkbox" name="Billetera gorda" id="Billetera gorda" value="Billetera gorda">  Billetera gorda<br>
+                    <hr>
+                    <label for="personaje">Tipo de personaje</label><br>
+                    <input class="opts" type="radio">Héroe / Heroina <br>
+                    <input class="opts" type="radio">Villano / Villana <br>
+                </div>
             </div>
-            <div class="form-right">
-                <label for="especie">Especie</label><br>
-                <select name="especie" id="especie">
-                    <option disabled selected >Especie</option>
-                    <option value="humano">Humano</option>
-                    <option value="alienigena">Alienigena</option>
-                </select><br>
-                <label for="foto">Agregar foto</label><br>
-                <input type="file" id="foto" name="foto"><br>
-                <label for="poderes">Poderes</label><br>
-                <input type="checkbox" name="volar" id="volar" value="volar" placeholder="Volar">Volar<br>
-                <input type="checkbox" name="superinteligencia" id="superinteligencia" value="superinteligencia">Superinteligencia<br>
-                <input type="checkbox" name="Vista de rayo láser" id="Vista de rayo láser" value="Vista de rayo láser">Vista de rayo láser<br>
-                <input type="checkbox" name="Billetera gorda" id="Billetera gorda" value="Billetera gorda">Billetera gorda<br>
-                <hr>
-                <label for="personaje">Tipo de personaje</label><br>
-                <input type="radio">Héroe / Heroina <br>
-                <input type="radio">Villano / Villana <br>
-            </div>
-        </div>
-        <button>Añadir</button>
-
-    </section>
+            <button>Añadir</button>
+        </section>
+    </main>
     
     <footer>
         <p>Todos los derechos reservados a FRONT END 1</p>

@@ -130,15 +130,71 @@ footer p{
 
 /* esto es el formulario de la pagina agregar */
 
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 950px;
+}
+
 .formulario-agregar{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    color: #f3f3f3;
     background-color: #00669F;
-    height: 832px;
-    width: 59rem;
+    height: 870px;
+    width: 59.6rem;
     border-radius: 3rem;
 }
-.formularios-agregar{
+
+.titulo-form{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+.formulario-agregar p{
+    font-size: 1.25rem;
+    margin: 1rem;
+}
+.forms-agregar{
     display: flex;
 }
+.form-right{
+    margin: 1rem;
+}
+.form-left{
+    margin: 1rem;
+}
+.field{
+    height: 63px;
+    width: 21.4rem;
+    border-radius: 1rem;
+    margin: 1rem 0;
+}
+.file{
+    height: 63px;
+    width: 21.4rem;
+    margin: 1rem 0;
+}
+textarea{
+    border-radius: 1rem;
+    margin-top: 1.5rem;
+}
+
+.opts{
+    margin: 1rem 0;
+}
+
+button{
+    color: black;
+    background-color: #1CD1B0;
+    height: 87px;
+    width: 29.1rem;
+    font-size: 2.5rem;
+    border-radius: 1.5rem;
+    border: none;
+}
+hr{
+    margin: 1rem 0;
+}
+

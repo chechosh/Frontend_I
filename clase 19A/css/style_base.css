@@ -52,11 +52,12 @@ nav ul li a:before{
     background: var(--decoration-color);
     position:absolute;
     bottom:-10px; 
-    height: 5px;
+    height: 3px;
     width: 0%;
-    transition: 7s 1;
+    transition:all 2s ;
 }
 nav ul li a:hover::before{
+    height: 4px;
     width: 100%;
 }
 

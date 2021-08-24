@@ -1,0 +1,241 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* esto es el header  */
+
+header{
+    height: 90px;
+    width: 100%;
+    background-color: #222222;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+
+nav ul{
+    display: none;
+}
+nav .carrito{
+    display: none;
+}
+.logo{
+    padding-left: 2rem;
+}
+.menu{
+    padding-right: 2rem;
+}
+
+/* esto es el slide  */
+
+.slide{
+    height: 512px;
+    background-image: url(../images/fondo.png);
+    color: #fbfbfb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.slide h2{
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+h2 span{
+    color: #D01418;
+}
+.slide button{
+    background-color: #D01418;
+    color: #fbfbfb;
+    height: 61px;
+    width: 13.7rem;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.5rem;
+}
+.slide button:hover{
+    border: solid 2px #fbfbfb;
+}
+
+
+/* esto es el container  */
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(233, 230, 230);
+}
+.container h3{
+    font-size: 2rem;
+    margin: 2rem 0;
+}
+.carta{
+    height: 322px;
+    width: 15rem;
+    background-color: white;
+    margin: 3rem;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.texto{
+    margin-top: 2rem;
+}
+.texto h5{
+    font-size: 1.5rem;
+}
+.envio{
+    color: #619D00;
+}
+ .banners{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 4rem;
+} 
+
+.banners a{
+    padding-right: 1rem;
+    text-decoration: none;
+    color: #f3f3f3;
+}
+.ban-l{
+    background-image: url(../images/Banner\ img.png);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 1.5rem;
+    margin: 1rem 3rem;
+    width: 22.5rem;
+    height: 135px;
+}
+.ban-r{
+    background-image: url(../images/Banner\ img\ \(1\).png);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 1.5rem;
+    margin: 1rem 3rem;
+    width: 22.5rem;
+    height: 135px;
+}
+
+
+/* esto es el footer  */
+
+footer{
+    display: flex;
+    flex-direction: column;
+}
+.superior{
+    height: 191px;
+    width: 100%;
+    background-color: #222222;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: #fbfbfb;
+}
+.logo-foot{
+    padding-top: 1.5rem;
+}
+.redes{
+    padding-bottom: 1rem;
+}
+.redes p{
+    padding-bottom: 1rem;
+    text-align: center;
+}
+.redes img{
+    margin: 0 0.5rem;
+}
+.inferior{
+    background-color: #c4c4c4;
+    text-align: center;
+}
+
+
+/* aca esta las medias query */
+
+@media (min-width:481px){
+
+    /* header  */
+header{
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu{
+    display: none;
+}
+nav{
+    display: flex;
+    
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+}
+nav ul  a{
+    text-decoration: none;
+    color: #fbfbfb;
+    margin: 0 0.6rem;
+}
+nav .carrito{
+    display: flex;
+    margin: 0 3rem;
+}
+
+/* slide  */
+
+.slide{
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.cartas{
+    display: flex;
+}
+.banners{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;    
+}
+.ban-l, .ban-r{
+    margin: 0 5rem;
+}
+/* container  */
+
+.carta{
+    width: 16.5rem;
+}
+
+/* footer  */
+
+.superior{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.logo-foot{
+    padding-left: 5rem;
+}
+.redes{
+    padding-right: 5rem;
+}
+}
